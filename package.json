@@ -1,0 +1,21 @@
+{
+  "name": "@placapi/client",
+  "version": "0.1.0",
+  "description": "Cliente oficial de PlacApi: consulta RUNT, SIMIT, SOAT, tecnomecánica, FASECOLDA y pico y placa de Colombia desde Node.js y TypeScript.",
+  "keywords": ["runt", "simit", "soat", "fasecolda", "colombia", "placa", "vehiculo", "api", "tecnomecanica", "pico-y-placa"],
+  "homepage": "https://placapi.com",
+  "repository": { "type": "git", "url": "git+https://github.com/pipe0919/placapi-node.git" },
+  "bugs": { "url": "https://github.com/pipe0919/placapi-node/issues" },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": { "typescript": "^5.6.0" }
+}
