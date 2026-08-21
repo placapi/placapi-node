@@ -10,7 +10,15 @@ Sin dependencias. Requiere Node 18 o superior.
 
 ## Instalación
 
+El paquete todavía no está en el registro público de npm. Hasta que lo esté, se instala
+directamente desde este repositorio — el `prepare` compila el TypeScript al instalarlo:
+
 ```bash
+npm install github:placapi/placapi-node
+```
+
+```bash
+# cuando esté publicado
 npm install @placapi/client
 ```
 
